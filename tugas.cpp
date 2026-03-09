@@ -23,4 +23,11 @@ int main(){
     cin >> berat;
     cout << "Masukkan tinggi badan (meter): ";
     cin >> tinggi;
+
+    bmi = hitungBMI (berat, tinggi);
+    cout << "\n--- Hasil ---" <<endl;
+    cout << "BMI Anda : " << bmi << endl;
+    cout << "Status   : " << statusBMI(bmi) <<endl;
+
+    return 0;
 }
